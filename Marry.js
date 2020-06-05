@@ -8,7 +8,16 @@ bot.on("ready", function () {
 })
 bot.on('message', message => {
     if (message.content.includes('victime')) {
-        message.channel.send('Press **F** to pay respect...')
+        message.channel.send('Press **F** to pay respect...');
+    }
+    if (message.content.includes('Yaoi')) {
+        message.channel.send('Non.');
+    }
+    if (message.content.includes('YAOI')) {
+        message.channel.send('NON.');
+    }
+    if (message.content.includes('yaoi')) {
+        message.channel.send('Non.');
     }
 })
 
