@@ -36,6 +36,10 @@ bot.on('message', message => {
         message.delete();
         message.channel.send('<:Marry:468131506733187112>');
     }
+    if (message.content.startsWith('<:redbeansoup:464529611292934156>') && message.content.endsWith('<:redbeansoup:464529611292934156>')) {
+        message.delete();
+        message.channel.send('<:Marry:468131506733187112>');
+    }
 })
 
 
