@@ -1,6 +1,19 @@
 {
-  "name": "MarryBot",
+  "name": "marrybot",
   "version": "1.0.0",
-  "dependencies": {
-  }
+  "description": "",
+  "main": "Marry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zatoster/MarryBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zatoster/MarryBot/issues"
+  },
+  "homepage": "https://github.com/Zatoster/MarryBot#readme"
 }
