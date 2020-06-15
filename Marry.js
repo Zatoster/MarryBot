@@ -3,6 +3,7 @@ const   Discord  = require('discord.js')
 const   bot = new Discord.Client()
 
 //Toutes les actions à faire quand le bot se connecte
+
 bot.on("ready", function () {
     console.log("Le bot est connecté");
     bot.guilds.cache
@@ -18,20 +19,22 @@ bot.on("ready", function () {
 
 })
 bot.on('message', message => {
-    if (message.content.includes('victime')) {
+    content = message.content.toLowerCase()
+    if (content.includes('!marry')) {
+        message.channel.send('Je suis en ligne !');
+    }
+    if (content.includes('victime')) {
         message.channel.send('Press **F** to pay respect...');
     }
-    if (message.content.includes('Yaoi')) {
-        message.channel.send('Non.');
-    }
-    if (message.content.includes('YAOI')) {
-        message.channel.send('NON.');
-    }
-    if (message.content.includes('yaoi')) {
+    if (content.includes('yaoi')) {
         message.channel.send('Non.');
     }
     if (message.content.includes('brrr')) {
         message.channel.send('Brrrrrrrrrrrrrrrrr');
+    }
+    if (message.content == '<:redbeansoup:464529611292934156>') {
+        message.delete();
+        message.channel.send('<:Marry:468131506733187112>');
     }
 })
 
