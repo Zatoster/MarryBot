@@ -6,16 +6,16 @@ const   bot = new Discord.Client()
 
 bot.on("ready", function () {
     console.log("Le bot est connecté");
-    bot.guilds.cache
-        .get("230405441845329930")
-        .members.cache.get("436998656491651072")
-        .setNickname("Belph goes brrrrrrr")
-        .then(
-            (res) => {},
-            (rej) => {
-                console.log(rej);
-            }
-        );
+    //bot.guilds.cache
+    //    .get("230405441845329930")
+    //    .members.cache.get("436998656491651072")
+    //    .setNickname("Belph goes brrrrrrr")
+    //    .then(
+    //        (res) => {},
+    //        (rej) => {
+    //            console.log(rej);
+    //        }
+    //    );
 
 })
 bot.on('message', message => {
